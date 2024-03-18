@@ -1,0 +1,367 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    min-height: 100vh;
+}
+
+.header{
+    margin-top:  10%;
+    width: 100%;
+    background-image: linear-gradient(to left, #1B2D94,#2852D2, #1FAEF0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-content{
+    
+    margin-left: 10vw;
+    width: 30%;
+    height: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .left-content span{
+    font-size: 1.3vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+  }
+  .header .left-content h1{
+    font-size: 3.5vw;
+    margin-top: 10px;
+
+  }
+  .header .left-content p{
+    font-size: 1.2vw;
+    margin-top: 20px;
+
+  }
+
+  .right{
+    margin-right: 8vw;
+
+  }
+  .ai-courses{
+    width: 100%;
+    background-color: white;
+    color: white;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ai-courses .h2{
+    color: black;
+   margin-bottom: 30px;
+   font-size: 2.3vw;
+   font-weight: 600;
+  }
+  .ai-content{
+    background-image: linear-gradient(to right, #4150F0, #5F34F5, #38179E);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 15px;
+    gap: 100px;
+    padding: 2vw 2vw;
+
+  }
+  .ai-content .left{
+    width: 60%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 30px;
+
+
+  }
+  .ai-content .left h2{
+    font-size: 2.5vw;
+
+
+  }
+  .ai-content .left p,
+  .ai-content .left span{
+    font-size: 1.4vw;
+    font-weight: 600;
+
+  }
+  .ai-content .left button{
+    font-size: 1.4vw;
+    padding: 15px;
+    border-radius: 10px;
+    background-color:#F65B66;
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+
+  }
+  .ai-content .left button:hover{
+    background-color: #EE414D;
+  }
+  .ri-arrow-right-line{
+
+    font-size: 20px;
+    
+  }
+  .ai-courses .right {
+    width: 50%;
+    margin-right: 0;
+  }
+  .ai-courses .right img{
+    width: 100%;
+
+  }
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6vw;
+}
+
+.text-content {
+    max-width: 60%;
+    text-align: center;
+}
+.ri-double-quotes-l{
+    font-size: 5vw;
+    color:skyblue;
+
+}
+
+.text-content p {
+    font-size: 1.5vw;
+    margin-top: 20px;
+    color: hsl(220, 7%, 51%);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.text-content span {
+font-size: 1.5vw;
+color: black;
+
+}
+
+.footer{
+    width: 100%;
+    background-color:#455B66;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3.5vw 0;
+    row-gap: 2vw;
+
+
+
+}
+.footer img{
+    width: 20%;
+    background-size: contain; /* Ensure image is contained within the div */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center; /* Center the background image */
+    background-color: white; /* Background color to blend with */
+    mix-blend-mode: multiply; /* Blend mode to remove white background */
+    color: white;
+
+}
+
+
+
+.list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    list-style: none;
+}
+.list li{
+    font-size: 1.3vw;
+    color:#E15B66;
+    cursor: pointer;
+
+}
+.list li:hover{
+    text-decoration: underline;
+
+}
+.icons ul{
+    list-style: none;
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    column-gap: 30px;
+}
+.icons li{
+    cursor: pointer;
+}
+
+
+/* Course card section */.course-card {
+    margin: 50px auto;
+    max-width: 1300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Adding hover effect */
+.course-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-thumbnail {
+    position: relative;
+    flex: 0 0 40%; /* Adjust the width of the thumbnail */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(203 213 225);
+}
+
+.card-thumbnail iframe {
+    margin-top: 90px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.difficulty, .instructor, .difficulty-instructor{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+}
+
+.difficulty-instructor{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#instructor{
+    margin-right: 40px;
+}
+
+.difficulty span, .instructor span, .instructor i{
+    margin: 5px;
+    color: #f95959;
+}
+
+.pre-req{
+    display: flex;
+    align-items: start;
+}
+
+.pre-req span{
+    margin-top: 3px;
+    margin-right: 5px;
+    color: #f95959;
+}
+
+.powered-by {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    color: #ffffffcc;
+    font-weight: bold;
+    padding: 8px 12px;
+    font-size: 28px;
+    /* background-color: rgb(203 213 225) */
+}
+
+.name-of-company{
+    color: rgb(49, 49, 49);
+}
+
+.text-content-card {
+    padding: 20px;
+    flex: 1; 
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #6d6d6d;
+}
+
+.text-content-card ul, ol {
+    padding-left: 32px; /* Adjust as needed */
+}
+
+.text-content-card ul{
+    margin: 30px 0px;
+}
+.buttons {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.enroll-button{
+    background-color: #f95959;
+    color: #fff;
+    border: none;
+}
+.learnmore-button{
+    background-color: #fff;
+    color: #f95959;
+    border: 1px solid #f95959;
+}
+
+.enroll-button:hover{
+    background-color: #ff2828;
+}
+
+.learnmore-button:hover{
+    background-color: #f2dbdb;
+}
+.below-cards{
+    margin-top: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading-h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.text-content h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.i-for-icon i {
+    color: coral;
+    font-size: 20px;
+    margin-right: 5px;
+}
